@@ -1,26 +1,25 @@
 /* CSS stillerinizi buraya girin */
 
 body {
-    margin: 5px;
-    padding: 5px;
-    background-color: #fff7e6;
+  margin: 5px;
+  padding: 5px;
+  background-color: #fff7e6;
 }
 
-
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header h2 {
-    padding-left: 40px ;
+  padding-left: 40px;
 }
 
-nav  {
-    display: flex;
-    align-items: center;
-    align-content: center;
+nav {
+  display: flex;
+  align-items: center;
+  align-content: center;
 }
 /*
 nav a {
@@ -39,129 +38,125 @@ nav a {
 }
 */
 button {
-    border: 1px;
-    width: auto;
-    color: white;
-    padding: 10px 27px;
-    text-align: center;
-    display: inline-block;
-    border-radius: 4px;
-    font-size: medium;
-    font-family: 'Courier New', Courier, monospace;
-    padding: 3px;
-    margin: auto;
+  border: 1px;
+  width: auto;
+  color: white;
+  padding: 10px 27px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 4px;
+  font-size: medium;
+  font-family: "Courier New", Courier, monospace;
+  padding: 3px;
+  margin: auto;
 }
 
 main {
-    width: 80vw;
-    height: 50vw;
-    margin: auto;
-    background-image: url("https://picsum.photos/800/500");
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
+  width: 80vw;
+  height: 50vw;
+  margin: auto;
+  background-image: url("https://picsum.photos/800/500");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
-main a, footer a {
-   /* background-color: white;*/
-    border: 0px solid black;
-    text-decoration: none;
-    width: 100px;
-    padding: 10px 0px;
-    text-align: center;
+main a,
+footer a {
+  /* background-color: white;*/
+  border: 0px solid black;
+  text-decoration: none;
+  width: 100px;
+  padding: 10px 0px;
+  text-align: center;
 }
 
 section {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 5% 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 5% 0;
 }
 
 section div {
-
-    width: 30vw;
-    margin-bottom: 10%;
+  width: 30vw;
+  margin-bottom: 10%;
 }
 
 section img {
-    width: 80%;
-    height: 80%;
-    padding: 30px;
+  width: 80%;
+  height: 80%;
+  padding: 30px;
 }
 
 section p {
-    text-align: center;
-    font-size: small;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: normal;
-
+  text-align: center;
+  font-size: small;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: normal;
 }
 
 footer {
-    background-color: #ffdf99;
-    padding: 5%;
-    
+  background-color: #ffdf99;
+  padding: 5%;
 }
 
 footer a {
-    display: block;
-    margin: auto;
-    
+  display: block;
+  margin: auto;
 }
 
 .spacer {
-    height: 3vw;
+  height: 3vw;
 }
 
-@media screen and (max-width: 500px) {  
+@media screen and (max-width: 500px) {
+  header {
+    flex-direction: column;
+  }
 
-    header {     
-        flex-direction: column;   
-   }  
-   
-   nav {
-        flex-direction: column;   
-   }   
-   
-   main {     
-       width: 90vw;     
-       height: 56vw;     
-       margin-top: 3%;   
-   }   
-   
-   section {     
-       justify-content: space-evenly;   
-   }   
-   
-   section div {     
-       width: 45vw;   
-   }
-       
-   
-   header h2 {    
-       padding-left: 0;
-   } } 
-   
-   @media screen and (max-width: 700px) {   
-   header {     
-       flex-direction: column;  
-   }   
-   
-   nav {     
-       flex-direction: column;   
-   }   
-   
-   header h2 {     
-       padding-left: 0;  
-   }  
-   
-   main {     
-       width: 90vw;    
-       height: 56vw;     
-       margin-top: 3%;   
-   } }
-   
+  nav {
+    flex-direction: column;
+  }
+
+  main {
+    width: 90vw;
+    height: 56vw;
+    margin-top: 3%;
+  }
+
+  section {
+    justify-content: space-evenly;
+  }
+
+  section div {
+    width: 45vw;
+  }
+
+  header h2 {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  header h2 {
+    padding-left: 0;
+  }
+
+  main {
+    width: 90vw;
+    height: 56vw;
+    margin-top: 3%;
+  }
+}
